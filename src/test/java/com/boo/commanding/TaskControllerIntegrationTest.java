@@ -53,7 +53,8 @@ public class TaskControllerIntegrationTest {
                 .andExpect(content()
                         .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$[0].type").value("PasswordResetTask"))
-                .andExpect(jsonPath("$[1].type").value("RebootTask"));
+                .andExpect(jsonPath("$[1].type").value("RebootTask"))
+                .andExpect(jsonPath("$[2].type").value("FactoryResetTask"));
 
 
     }

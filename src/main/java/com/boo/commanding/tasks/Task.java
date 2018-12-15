@@ -18,7 +18,8 @@ import javax.persistence.Id;
         property = "type")
 @JsonSubTypes({
         @JsonSubTypes.Type(value = RebootTask.class, name = "RebootTask"),
-        @JsonSubTypes.Type(value = PasswordResetTask.class, name = "PasswordResetTask")
+        @JsonSubTypes.Type(value = PasswordResetTask.class, name = "PasswordResetTask"),
+        @JsonSubTypes.Type(value = FactoryResetTask.class, name = "FactoryResetTask")
 })
 public abstract class Task {
 
