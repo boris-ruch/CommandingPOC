@@ -34,7 +34,7 @@ public class TaskControllerIntegrationTest {
 
         //arrange
         var gatewayId = UUID.randomUUID().toString();
-        var pwdResetTask = PasswordResetTask.builder().build();
+        var pwdResetTask = PasswordResetTask.builder().build(); 
         var factoryResetTask = FactoryResetTask.builder().build();
         var rebootTask = RebootTask.builder().build();
         pwdResetTask.setGatewayId(gatewayId);

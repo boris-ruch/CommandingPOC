@@ -1,17 +1,14 @@
 package com.boo.commanding.tasks;
 
 import lombok.Builder;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 
-import static com.boo.commanding.tasks.Task.TaskType.PWD_RESET;
-
 @Builder
 @Entity
+@ToString
 public class PasswordResetTask extends Task {
 
-    public PasswordResetTask() {
-        super(PWD_RESET);
-    }
 
 }

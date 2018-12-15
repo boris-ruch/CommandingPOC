@@ -1,18 +1,15 @@
 package com.boo.commanding.tasks;
 
 import lombok.Builder;
+import lombok.ToString;
 
 import javax.persistence.Entity;
-
-import static com.boo.commanding.tasks.Task.TaskType.REBOOT;
 
 
 @Entity
 @Builder
+@ToString
 public class RebootTask extends Task {
 
-    public RebootTask() {
-        super(REBOOT);
-    }
 
 }

@@ -1,17 +1,14 @@
 package com.boo.commanding.tasks;
 
 import lombok.Builder;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 
-import static com.boo.commanding.tasks.Task.TaskType.FACTORY_RESET;
-
 @Builder
+@ToString
 @Entity
 public class FactoryResetTask extends Task {
 
-    public FactoryResetTask() {
-        super(FACTORY_RESET);
-    }
 
 }
