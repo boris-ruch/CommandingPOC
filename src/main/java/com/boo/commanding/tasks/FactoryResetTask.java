@@ -12,7 +12,6 @@ public class FactoryResetTask extends Task {
 
     public FactoryResetTask() {
         super(FACTORY_RESET);
-        super.setState(State.OPEN);
     }
 
 }

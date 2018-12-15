@@ -12,7 +12,6 @@ public class PasswordResetTask extends Task {
 
     public PasswordResetTask() {
         super(PWD_RESET);
-        super.setState(State.OPEN);
     }
 
 }

@@ -13,7 +13,6 @@ public class RebootTask extends Task {
 
     public RebootTask() {
         super(REBOOT);
-        super.setState(State.OPEN);
     }
 
 }

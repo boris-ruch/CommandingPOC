@@ -11,6 +11,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import static com.boo.commanding.tasks.Task.State.OPEN;
+
 @Entity
 @Data
 @JsonTypeInfo(
@@ -33,6 +35,7 @@ public abstract class Task {
 
     public Task(TaskType taskType) {
         this.taskType = taskType;
+        this.state = OPEN;
     }
 
 
